@@ -682,8 +682,8 @@ ul {
 .footer .container {
   display: grid;
   grid-template-columns: repeat(3 ,minmax(260px,1fr));
-  
 }
+
 .footer .container .box p{
   padding: 40px 0;
   line-height: 1.6;
@@ -706,6 +706,7 @@ ul {
   font-size: 20px;
 }
 
+}
 .footer .container .box  ul:last-of-type{
   padding-bottom: 48px;
 }
@@ -729,4 +730,17 @@ ul {
   padding-left: 15px;
 }
 
+@media (max-width: 992px) {
+  .footer .container {
+    display: grid;
+    grid-template-columns: repeat(1,minmax(260px,1fr));
+  }
+  .footer .container .box h4 {
+    top: 38%;
+  }
+  .footer .box:last-of-type button {
+    width: 70%;
+    justify-content: center;
+  }
+}
 /* End footer */
